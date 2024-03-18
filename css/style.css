@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'super comic';
+    src: url(../SuperComic-qZg62.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../4844928.jpg);
+    background-size: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-rigth ul,.nav-left ul{
+    display: flex;
+    list-style: none;
+}
+.nav-rigth li{
+    margin-left: 40px;
+    
+    font-family: 'super comic';
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+    width: 230px;
+    text-align: center;
+    height: 55px;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.nav-left li{
+    padding-top: 7px;
+   margin: 40px 40px;
+   
+    font-family: 'super comic';
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+    width: 230px;
+    text-align: center;
+    height: 55px;
+    cursor: pointer;
+}
+.nav-left li:hover,.nav-rigth li:hover{
+    background-color: rgb(153, 153, 153) ;
+}
+.nav-left a{
+    color: blue;
+}
+.nav-rigth a{
+    color: red;
+}
+.nav-left a ,.nav-rigth a{
+    text-decoration: none;
+}
+
+.img-thumbnail{
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 16px 14px 20px black;
+    transition: transform 0.5s ease; /* Transición de tamaño */
+    animation: scaleAnimation 6s infinite alternate; /* Animación de tamaño infinita */
+}
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(1.1); /* Tamaño original */
+    }
+    50% {
+      transform: scale(1); /* Reducir el tamaño */
+    }
+    100% {
+      transform: scale(1.1); /* Volver al tamaño original */
+  }
+}
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#answers{
+    display: flex;
+}
+.boton-respuesta{
+    list-style: none;
+    margin: 0px   80px;
+}
+.boton-respuesta button {
+    font-family: 'Super Comic';
+    width: 170px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 16px 14px 20px black;
+   
+}
+.boton-respuesta button:hover{
+    background-color: rgb(153, 153, 153);
+    border: 1px solid gray;
+}
+.container-tittle{
+    bottom: 770px ;
+    position: absolute;
+    left: 37%;
+    z-index: 2;
+    width: 500px;
+}
+.tittle{
+    color: white;
+    font-size: 45px;
+    font-family: 'Super Comic';
+    text-align: center;
+    shape-outside: circle(50%); /* Forma de un círculo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    animation: colorTransition 5s infinite alternate; /* Animación de color */
+}
+@keyframes colorTransition {
+    0% {
+      color: rgb(77, 75, 75); /* Color inicial */
+    }
+    50% {
+      color: rgb(148, 147, 147); /* Color intermedio */
+    }
+    100% {
+      color: rgb(65, 60, 60); /* Color final */
+    }
+  }
+.question-tittle{
+    color: white;
+    font-size: 30px;
+    margin-top: 45px;
+}
+.question-text{
+    font-size: 20px;
+    margin: 20px 0;
+    color: white;
+}
+.resultado{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
